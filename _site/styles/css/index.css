@@ -4006,14 +4006,15 @@ textarea.input-group-sm > .input-group-btn > .btn {
   color: #ffffff;
 }
 .breadcrumb {
-  padding: 8px 15px;
-  margin-bottom: 20px;
+  padding: 8px 10px;
+  margin-bottom: 15px;
   list-style: none;
-  background-color: #f5f5f5;
+  background-color: none;
   border-radius: 4px;
 }
 .breadcrumb > li {
   display: inline-block;
+  font-size: 16px;
 }
 .breadcrumb > li + li:before {
   content: "/\00a0";
@@ -6440,7 +6441,7 @@ hr {
   overflow: hidden;
   background: #fff;
   background-color: #fff;
-  padding: 1px 60px 80px 60px;
+  padding: 10px 60px 60px 60px;
   margin: 0 -15px;
   border: none;
   border-radius: 0 0 4px 4px;
