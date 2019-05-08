@@ -7,19 +7,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Tags - HelpCenterForJekyll</title>
 
-	<link rel="shortcut icon" href="/LessOrMore/styles/images/favicon.jpg">
-	<link rel="icon" href="/LessOrMore/styles/images/favicon.jpg">
+	<link rel="shortcut icon" href="/styles/images/favicon.jpg">
+	<link rel="icon" href="/styles/images/favicon.jpg">
 
-	<link rel="stylesheet" href="/LessOrMore/styles/css/index.css">
-	<link rel="stylesheet" href="/LessOrMore/styles/css/fontawesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="/LessOrMore/styles/css/syntax.css">
-	<link rel="canonical" href="/LessOrMore/tag/">
-	<link rel="alternate" type="application/rss+xml" title="HelpCenterForJekyll" href="/LessOrMore/feed.xml">
+	<link rel="stylesheet" href="/styles/css/index.css">
+	<link rel="stylesheet" href="/styles/css/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/styles/css/syntax.css">
+	<link rel="canonical" href="/tag/">
+	<link rel="alternate" type="application/rss+xml" title="HelpCenterForJekyll" href="/feed.xml">
 	
 	<meta name="keywords" content="Tags, HelpCenterForJekyll, Jekyll教程；Jekyll开发；帮助中心开发；">
 	<meta name="description" content="Jekyll教程；Jekyll开发；帮助中心开发；">
 
-	<script src="/LessOrMore/styles/js/jquery.min.js"></script>
+	<script src="/styles/js/jquery.min.js"></script>
 	<!--[if lt IE 9]>
     	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   	<![endif]-->
@@ -50,36 +50,54 @@
         <span class="icon-bar"></span>
       </button>
             <a href="/" class="navbar-brand">
-                <!--img src="/LessOrMore/styles/images/logo.jpg" --><p>logo img</p>
+                <!--img src="/styles/images/logo.jpg" --><p>logo img</p>
             </a>
         </div>
         <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
             <ul class="nav navbar-nav">
+                
                 <li>
-                    <a href="/LessOrMore/">主页</a>
+                    <a href="/">主页</a>
                 </li>
                 <li>
-                    <a href="/LessOrMore/categories/">按分类查看</a>
-                </li>
+                        <a href="/categories/">分类</a>
+                    </li>
+                
                 <li>
-                    <a href="/LessOrMore/tag">按标签查看</a>
+                    <a href="/tag">按标签查看</a>
                 </li>
             </ul>
-            <ul class="nav navbar-nav navbar-right">
+            <!-- <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">关于<b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li><a rel="nofollow" target="_blank" href="https://github.com/Ariel12138">Github</a></li>
                         <li><a rel="nofollow" target="_blank" href="https://github.com/Ariel12138">关于作者</a></li>
-                        <li><a rel="nofollow" href="/LessOrMore/books">我的书单</a></li>
+                        <li><a rel="nofollow" href="/books">我的书单</a></li>
                         <li><a rel="nofollow" href="http://www.hifreud.com/domains/">域名管理</a></li>
-                        <li><a rel="nofollow" href="/LessOrMore/reference">推荐博客</a></li>
-                        <li><a href="/LessOrMore/feed.xml">RSS订阅</a></li>
+                        <li><a rel="nofollow" href="/reference">推荐博客</a></li>
+                        <li><a href="/feed.xml">RSS订阅</a></li>
                         <li class="divider"></li>
                         <li><a rel="nofollow" target="_blank" href="https://github.com/luoyan35714/LessOrMore.git">本项目</a></li>
                     </ul>
                 </li>
-            </ul>
+            </ul> -->
+            <div id="search-container" style="float:right; position:relative; display:inline-block;">
+                <input type="text" id="search-input" placeholder="search...">
+                <ul id="results-container"></ul>
+            </div>
+            <script src="/styles/js/simple-jekyll-search.min.js"></script>
+            <script>
+                SimpleJekyllSearch({
+                    searchInput: document.getElementById('search-input'),
+                    resultsContainer: document.getElementById('results-container'),
+                    json: '/search.json',
+                    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>', // 文章列表模板
+                    noResultsText: '没有搜索到文章', // 无搜索数据提示语
+                    limit: 20, // 返回最大文章数
+                    fuzzy: true // 是否模糊匹配
+                })
+            </script>
         </nav>
     </div>
 </header>
@@ -131,7 +149,7 @@
     
     	
     	<ol class="breadcrumb">
-    		<li><a href="/LessOrMore/2019/05/08/Jekyll-Installation-On-Windows/">在 Windows 系统安装jekyll</a></li>
+    		<li><a href="/2019/05/08/Jekyll-Installation-On-Windows/">在 Windows 系统安装jekyll</a></li>
     		<li style="float:right;"><span>2019-05-08</span></li>
     	</ol>
     	
@@ -142,7 +160,7 @@
     
     	
     	<ol class="breadcrumb">
-    		<li><a href="/LessOrMore/2019/05/06/How-Jekyll-Works/">Jekyll基本原理</a></li>
+    		<li><a href="/2019/05/06/How-Jekyll-Works/">Jekyll基本原理</a></li>
     		<li style="float:right;"><span>2019-05-06</span></li>
     	</ol>
     	
@@ -153,7 +171,7 @@
     
     	
     	<ol class="breadcrumb">
-    		<li><a href="/LessOrMore/2019/05/04/Jekyll-Install-On-Mac/">在 Mac 系统安装jekyll</a></li>
+    		<li><a href="/2019/05/04/Jekyll-Install-On-Mac/">在 Mac 系统安装jekyll</a></li>
     		<li style="float:right;"><span>2019-05-04</span></li>
     	</ol>
     	
@@ -172,7 +190,7 @@
     
     	
     	<ol class="breadcrumb">
-    		<li><a href="/LessOrMore/2019/05/07/Html-Introduction/">html简介</a></li>
+    		<li><a href="/2019/05/07/Html-Introduction/">html简介</a></li>
     		<li style="float:right;"><span>2019-05-07</span></li>
     	</ol>
     	
@@ -198,11 +216,11 @@
 	</div>
 </footer>
 
-<script src="/LessOrMore/styles/js/jquery.min.js"></script>
-<script src="/LessOrMore/styles/js/bootstrap.min.js"></script>
-<script src="/LessOrMore/styles/js/holder.min.js"></script>
-<script src="/LessOrMore/styles/js/lessismore.js"></script>
-<script src="/LessOrMore/styles/js/application.js"></script>
+<script src="/styles/js/jquery.min.js"></script>
+<script src="/styles/js/bootstrap.min.js"></script>
+<script src="/styles/js/holder.min.js"></script>
+<script src="/styles/js/lessismore.js"></script>
+<script src="/styles/js/application.js"></script>
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
   </body>
