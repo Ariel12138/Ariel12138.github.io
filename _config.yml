@@ -1,0 +1,26 @@
+# Site settings
+name: HelpCenterForJekyll
+email: gaoyuxin@pku.edu.cn
+author: Yuxin Gao
+url: https://github.com/Ariel12138
+resume_site: https://github.com/Ariel12138
+github: https://github.com/Ariel12138
+baseurl: ''
+description: Actually, less is more!
+meta_description: Jekyll教程；Jekyll开发；帮助中心开发；
+motto: It's our wits that make us men.
+banner: ''
+
+#permalink: /:categories/:year/:month/:day/:title/
+permalink: /:year/:month/:day/:title/
+paginate: 10
+
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
+
+github_username: Ariel12138
+
+# Build settings
+markdown: kramdown
+
+# baidu_analysis: 
+

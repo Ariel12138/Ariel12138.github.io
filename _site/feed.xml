@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <description>Actually, less is more!</description>
+    <link>http://localhost:4000/LessOrMore/</link>
+    <atom:link href="http://localhost:4000/LessOrMore/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 08 May 2019 10:35:35 +0800</pubDate>
+    <lastBuildDate>Wed, 08 May 2019 10:35:35 +0800</lastBuildDate>
+    <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>在 Windows 系统安装jekyll</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#安装jekyll&quot; id=&quot;markdown-toc-安装jekyll&quot;&gt;安装jekyll&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#test-right-sidebar&quot; id=&quot;markdown-toc-test-right-sidebar&quot;&gt;test right sidebar&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#卸载jekyll&quot; id=&quot;markdown-toc-卸载jekyll&quot;&gt;卸载jekyll&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#right-sidebar-test-success&quot; id=&quot;markdown-toc-right-sidebar-test-success&quot;&gt;right sidebar test success&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#this-is-h4&quot; id=&quot;markdown-toc-this-is-h4&quot;&gt;this is h4&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#liquid介绍&quot; id=&quot;markdown-toc-liquid介绍&quot;&gt;liquid介绍&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#运算符&quot; id=&quot;markdown-toc-运算符&quot;&gt;运算符&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#逻辑真假&quot; id=&quot;markdown-toc-逻辑真假&quot;&gt;逻辑真假&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#数据类型&quot; id=&quot;markdown-toc-数据类型&quot;&gt;数据类型&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;安装jekyll&quot;&gt;安装jekyll&lt;/h2&gt;
+&lt;p&gt;在windows上安装jekyll&lt;/p&gt;
+
+&lt;h3 id=&quot;test-right-sidebar&quot;&gt;test right sidebar&lt;/h3&gt;
+&lt;p&gt;测试页面导航&lt;/p&gt;
+
+&lt;h2 id=&quot;卸载jekyll&quot;&gt;卸载jekyll&lt;/h2&gt;
+
+&lt;h3 id=&quot;right-sidebar-test-success&quot;&gt;right sidebar test success&lt;/h3&gt;
+
+&lt;h4 id=&quot;this-is-h4&quot;&gt;this is h4&lt;/h4&gt;
+&lt;p&gt;balabalabal&lt;br /&gt;
+balabalabal&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;navbar&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;将左导航 内容页 和右导航整合&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;测试加粗&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;虽然设计好看的主题很多。但是真正适合拿来做博客的却不多。中间一直没有找到合适的主题。直到有一天看到Less官网的主题之后，豁然觉得这就是我的博客想要的样子。简单而又不平凡。所以就决定了要把博客迁移到这个主题，然后拿了两天晚上来把这个主题做出来。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;在LessOrMore/_posts目录下新建一个文件，可以创建文件夹并在文件夹中添加文件，方便维护。在新建文件中粘贴如下信息，并修改以下的titile,date,categories,tag的相关信息，添加* content {:toc}为目录相关信息，在进行正文书写前需要在目录和正文之间输入至少2行空行。然后按照正常的Markdown语法书写正文。&lt;/p&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;liquid介绍&quot;&gt;liquid介绍&lt;/h2&gt;
+
+&lt;p&gt;liquid语言可以分为三类，objects，tags，和filters&lt;/p&gt;
+
+&lt;p&gt;objects，即标记在页面上显示内容的区域，用两个花括号如 `&amp;lt;div class=&quot;container docs-container&quot;&amp;gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;div class=&quot;col-md-9&quot; role=&quot;main&quot;&amp;gt;
+  &amp;lt;div class=&quot;panel docs-content&quot;&amp;gt;
+    &amp;lt;div class=&quot;wrapper&quot;&amp;gt;
+        &amp;lt;header class=&quot;post-header&quot;&amp;gt;
+          &amp;lt;h1 class=&quot;post-title&quot;&amp;gt;html简介&amp;lt;/h1&amp;gt;
+          &amp;lt;!--
+            &amp;lt;p class=&quot;post-meta&quot;&amp;gt;May 7, 2019&amp;lt;/p&amp;gt;
+          --&amp;gt;
+          &amp;lt;div class=&quot;meta&quot;&amp;gt;&amp;lt;span class=&quot;postdate&quot;&amp;gt;May 07, 2019&amp;lt;/span&amp;gt;&amp;lt;/div&amp;gt;
+          &amp;lt;br /&amp;gt;
+        &amp;lt;/header&amp;gt;
+        &amp;lt;article class=&quot;post-content&quot;&amp;gt;
+          
+
+        &amp;lt;/article&amp;gt;
+    &amp;lt;/div&amp;gt;
+  &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&quot;row&quot;&amp;gt;
+  &amp;lt;div class=&quot;col-md-3&quot;&amp;gt;
+    &amp;lt;div class=&quot;sidebar hidden-print&quot; role=&quot;complementary&quot;&amp;gt;
+      &amp;lt;div id=&quot;navigation&quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h1&gt;&lt;/h1&gt;
+&lt;ul class=&quot;nav sidenav&quot;&gt;
+  &lt;/ul&gt;
+&lt;p&gt;&amp;lt;/div&amp;gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &amp;lt;/div&amp;gt;
+  &amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+`&lt;/p&gt;
+
+&lt;p&gt;tags，为模版创建逻辑和控制流时使用，用{ 和 %围住，可以用tags写条件和循环，tags按照功能可以分为三类，控制流，迭代，和分配变量&lt;/p&gt;
+
+&lt;p&gt;filters，用于改变object的输出，在object中使用，并用&lt;code class=&quot;highlighter-rouge&quot;&gt;|&lt;/code&gt;隔开，如&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;：涉及liquid模版语言的%和{ 需要转义&lt;/p&gt;
+
+&lt;h4 id=&quot;运算符&quot;&gt;运算符&lt;/h4&gt;
+
+&lt;h4 id=&quot;逻辑真假&quot;&gt;逻辑真假&lt;/h4&gt;
+
+&lt;p&gt;字符串，空内容，0等判断为真，nil 和 false 判断为假&lt;/p&gt;
+
+&lt;h4 id=&quot;数据类型&quot;&gt;数据类型&lt;/h4&gt;
+</description>
+        <pubDate>Wed, 08 May 2019 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/LessOrMore/2019/05/08/Jekyll-Installation-On-Windows/</link>
+        <guid isPermaLink="true">http://localhost:4000/LessOrMore/2019/05/08/Jekyll-Installation-On-Windows/</guid>
+        
+        <category>Jekyll</category>
+        
+        
+        <category>Jekyll的安装</category>
+        
+      </item>
+    
+      <item>
+        <title>html简介</title>
+        <description>
+</description>
+        <pubDate>Tue, 07 May 2019 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/LessOrMore/2019/05/07/Html-Introduction/</link>
+        <guid isPermaLink="true">http://localhost:4000/LessOrMore/2019/05/07/Html-Introduction/</guid>
+        
+        <category>Web</category>
+        
+        
+        <category>HTML&amp;CSS</category>
+        
+      </item>
+    
+      <item>
+        <title>Jekyll基本原理</title>
+        <description>
+</description>
+        <pubDate>Mon, 06 May 2019 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/LessOrMore/2019/05/06/How-Jekyll-Works/</link>
+        <guid isPermaLink="true">http://localhost:4000/LessOrMore/2019/05/06/How-Jekyll-Works/</guid>
+        
+        <category>Jekyll</category>
+        
+        
+        <category>Jekyll的基本原理与使用介绍</category>
+        
+      </item>
+    
+      <item>
+        <title>在 Mac 系统安装jekyll</title>
+        <description>
+</description>
+        <pubDate>Sat, 04 May 2019 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/LessOrMore/2019/05/04/Jekyll-Install-On-Mac/</link>
+        <guid isPermaLink="true">http://localhost:4000/LessOrMore/2019/05/04/Jekyll-Install-On-Mac/</guid>
+        
+        <category>Jekyll</category>
+        
+        
+        <category>Jekyll的安装</category>
+        
+      </item>
+    
+  </channel>
+</rss>
